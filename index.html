@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>QR Code Generator</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <!-- <script src="script.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <!-- <form id="form-generate"> -->
+    <div class="container text-center">
+      <div class="row align-items-center">
+        <div class="col" style="padding-top: 10%;">
+          <h1>QR Code Generator</h1>
+          <p style="font-size: small;">Mohon masukkan link website pada kolum yang kosong.</p>
+        </div>
+      </div>
+      <div class="row align-items-center" style="padding-top: 5%;">
+        <div class="col">
+          <label class="form-label">Link Website disini</label>
+          <input type="text" class="form-control" id="link-url" placeholder="www.google.com">
+        </div>
+      </div>
+      <div class="row align-items-center" style="padding-top: 5%;">
+        <div class="col">
+          <select id="size" class="form-select form-select-xl" disabled>
+            <option value="100" class="value">Small</option>
+            <option value="200" class="value" selected>Medium</option>
+            <option value="300" class="value">Large</option>
+            <!-- Small = 100X100
+            Medium = 200x200
+            Large = 300x300
+           -->
+          </select>
+        </div>
+      </div>
+      <div class="row align-items-center" style="padding-top: 5%;">
+        <div class="col">
+          <button class="btn btn-primary mb-3" onclick="createQR()" type="submit">
+            Buat QR Code
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- QR Code Generate Here -->
+    <div class="container text-center">
+      <div class="row align-items-center">
+        <div class="col">
+          <div id="qrcode" class="col-md" >
+            <p id="prompt"></p>
+            <img src="" id="image_qr">
+            <style>
+              #qrcode{
+                border-radius: 5px;
+                overflow: hidden;
+                transition: max-height 1s;
+              }
+              #qrcode img{
+                width: 50%;
+                padding: 10px;
+              }
+              #qrcode.show-img{
+                max-height: 300px;
+                margin:10px auto;
+              }
+            </style>
+            <p id=""></p>
+          </div>
+
+          <script>
+
+            // just for the box 
+            let qrcode = document.getElementById('qrcode');
+
+            // the real qr generated later
+            let image_qr = document.getElementById('image_qr');
+
+            // the link
+            let link_url = document.getElementById('link-url');
+
+            const prompt_user = document.getElementById('prompt');
+
+            function createQR(){
+              // imageqr.src = "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=".concat("link-url"); 
+              // or 
+              if(link_url.value.length > 0){
+                image_qr.src = "https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=" + link_url.value;
+              }
+              
+              // for debugging purpose
+              console.log(image_qr);
+
+              // trigger to show the qrcode
+              qrcode.add(show-img);
+
+              prompt_user = "Sila Simpan QR Code ini.";
+            }
+
+            
+          </script>
+        </div>
+      </div>
+    </div>
+  <!-- </form> -->
+
+  
+
+  </body>
+</html>
