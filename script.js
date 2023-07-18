@@ -33,7 +33,28 @@ const onGenerateSubmit = (e) => {
     const linkurl = document.getElementById('link-url').value;
     const size = document.getElementById('size').value;
 
-    console.log('linkurl','size')
+        console.log('linkurl','size')
+    
+        let request = XMLHttpRequest();
+
+        request.open("GET",{
+            "data": "https://www.qrcode-monkey.com",
+            "config": {
+                "body":"circle",
+                "logo":"https://www.lindungianak.com/wp-content/uploads/2023/04/d288edb3-3488-4df0-a2a0-153b367ff561.jpg"
+            },
+            "size":200,
+            "download":false,
+            "file":"svg"
+        })
+        request.send();
+        request.onload = () => {
+            console.log(request);
+            if (request.status ==200) {
+                console.log(request.response)
+            }
+        }
 }
 
-form.addEventListener('submit', onGenerateSubmit);
+// form.addEventListener('submit', onGenerateSubmit);
+

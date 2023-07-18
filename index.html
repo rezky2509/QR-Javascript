@@ -43,6 +43,11 @@
             Buat QR Code
           </button>
         </div>
+        <div class="col">
+          <button class="btn btn-warning mb-3" onclick="createQR_image()" type="submit">
+            Buat QR Code
+          </button>
+        </div>
       </div>
     </div>
     <!-- QR Code Generate Here -->
@@ -66,10 +71,12 @@
                 max-height: 300px;
                 margin:10px auto;
               }
+              #qrcode.show-prompt{
+                max-width: 10px;
+              }
             </style>
-            <p id=""></p>
+            <p id="prompt"></p>
           </div>
-
           <script>
 
             // just for the box 
@@ -81,7 +88,7 @@
             // the link
             let link_url = document.getElementById('link-url');
 
-            const prompt_user = document.getElementById('prompt');
+            
 
             function createQR(){
               // imageqr.src = "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=".concat("link-url"); 
@@ -91,12 +98,41 @@
               }
               
               // for debugging purpose
-              console.log(image_qr);
+              // console.log(image_qr);
 
               // trigger to show the qrcode
               qrcode.add(show-img);
 
+              let prompt_user = document.getElementById('prompt');
+
               prompt_user = "Sila Simpan QR Code ini.";
+
+              qrcode.add(show-prompt);
+              
+              console.log(prompt_user);
+            }
+
+            function createQR_image(){
+
+              let request = XMLHttpRequest();
+
+              request.open("GET",{
+                  "data": "https://www.qrcode-monkey.com",
+                  "config": {
+                      "body":"circle",
+                      "logo":"https://www.lindungianak.com/wp-content/uploads/2023/04/d288edb3-3488-4df0-a2a0-153b367ff561.jpg"
+                  },
+                  "size":200,
+                  "download":false,
+                  "file":"svg"
+              })
+              request.send();
+              request.onload = () => {
+                  console.log(request);
+                  if (request.status ==200) {
+                      console.log(request.response)
+                  }
+              }
             }
 
             
