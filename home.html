@@ -70,6 +70,9 @@
 
   <!-- Control Center for Material Kit parallax effects, scripts for the example pages etc -->
   <script src="./assets/js/material-kit-pro.min.js" type="text/javascript"></script>
+
+  <!-- Selected URL Function JS -->
+  <script src="google_form.js"></script>
 </head>
     <body>
   
@@ -94,31 +97,31 @@
       <div class="col-12">
         <div class="card text-center">
           <div class="card-header">
-            <h3>Sila pilih kategori kekeresan yang terjadi dengan anda</h3>
+            <h3>Sila pilih kategori kekerasan yang terjadi dengan anda</h3>
             <!-- <p>Jangan Takut, ayo laporkan dengan kami !</p> -->
+            <form name="form_selected" id="form_selected">
             <div class="row">
-              <!-- <div class="col-12" style="padding-top: 2%;">
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                  <label class="form-check-label" for="inlineRadio1">Kekerasan Terhadap Anak</label>
-                </div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                  <label class="form-check-label" for="inlineRadio2">Kekerasan Mental</label>
-                </div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                  <label class="form-check-label" for="inlineRadio2">Masalah Anak Dalam Pendindikan</label>
-                </div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                  <label class="form-check-label" for="inlineRadio2">Trafficking Dan Exploitasi</label>
-                </div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                  <label class="form-check-label" for="inlineRadio2">Anak Berhadapan dengan Hukum</label>
-                </div>
+              
+              <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                <input type="radio" class="btn-check" name="url" id="btnradio1" autocomplete="off" value="https://docs.google.com/forms/d/e/1FAIpQLSfIz6lVEUhvsIgwqHevqXTcojOWxVHzFHVgxA032wTTjIiUHQ/viewform">
+                <label class="btn btn-outline-success" for="btnradio1">Aduan kekerasan terhadap anak</label>
+              
+                <input type="radio" class="btn-check" name="url" id="btnradio2" autocomplete="off" value="">
+                <label class="btn btn-outline-success" for="btnradio2">Bullying Terhadap Anak</label>
+              
+                <input type="radio" class="btn-check" name="url" id="btnradio3" autocomplete="off" value="">
+                <label class="btn btn-outline-success" for="btnradio3">Masalah Anak Dalam Pendidikan</label>
+
+                <input type="radio" class="btn-check" name="url" id="btnradio3" autocomplete="off" value="">
+                <label class="btn btn-outline-success" for="btnradio3">Trafficking dan Exploitasi</label>
+
+                <input type="radio" class="btn-check" name="url" id="btnradio3" autocomplete="off" value="">
+                <label class="btn btn-outline-success" for="btnradio3">Anak Berhadapan dengan Hukum</label>
+              </form>
               </div>
+              <!-- <p id="result"></p>
+              <p>Link show here</p> -->
+            
             </div>
           </div>
           <form action="">
@@ -214,30 +217,19 @@
                   </div>
                   <input type="text" class="form-control" placeholder="Jenis Sekolah">
                 </div>
-
-                <div class="row text-center py-3 mt-3">
-                  <div class="col-4 mx-auto">
-                    <div class="input-group input-group-static">
-                      <label>First Name</label>
-                      <input class="form-control" placeholder="eg. Kurt Shelby" type="text" >
-                    </div>
-                  </div>
-                </div>
-
+                
                 <div class="input-group">
                   <div class="input-group-prepend">
                     <span class="input-group-text">
                       <span class="material-symbols-outlined">
-                        dialogs
+                        history_edu
                         </span>
                     </span>
                   </div>
-                  <textarea id="keluhan" cols="70" rows="4" placeholder="Keluhan"></textarea>
-                </div> -->
+                  <input type="text" class="form-control" placeholder="Keluhan">
+                </div>
 
-
-                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfNi6TrHA9PUIdhLgDlla7pZmXEOxY6ItjBQOn_2cW87TgrxQ/viewform?embedded=true" width="640" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-
+                <!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfNi6TrHA9PUIdhLgDlla7pZmXEOxY6ItjBQOn_2cW87TgrxQ/viewform?embedded=true" width="640" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> -->
               </div>
               <div class="footer text-center">
                 <a href="#" class="btn btn-primary">Laporkan</a>
