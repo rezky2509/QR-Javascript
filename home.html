@@ -46,47 +46,41 @@
 
         <div class="card text-center">
           <div class="card-header shadow">
-            <h3>Sila pilih kategori kekerasan yang terjadi dengan anda ya</h3>
+            <h3>Anda Korban Kekerasan di Sekolah? yuk laporkan.</h3>
           </div>
 
           <!-- Start Card Body -->
           <div class="card-body shadow">
             <h5 class="card-title text-center">Sila masukkan detil informasi dibawah</h5>
+            <p>Pilih dulu jenis kekerasan yang terjadi</p>
             <div class="text-center">
               <ul class="list-group text-center">
                 <li class="list-group-item">
-                  <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="firstRadio">
-                  <label class="form-check-label" for="firstRadio">Aduan kekerasan terhadap anak</label>
+                  <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="aduan-kekerasan" id="kekerasan_anak" onclick="showLink('kekerasan_anak')">
+                  <label class="form-check-label" id="kekerasan-anak" for="firstRadio">Aduan kekerasan terhadap anak</label>
                 </li>
                 <li class="list-group-item">
-                  <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="secondRadio">
-                  <label class="form-check-label" for="secondRadio">Bullying terhadap anak</label>
+                  <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="bullying" id="bullying_anak" onclick="showLink('bullying_anak')">
+                  <label class="form-check-label" id="bullying-anak" for="secondRadio">Bullying terhadap anak</label>
                 </li>
                 <li class="list-group-item">
-                  <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="thirdRadio">
-                  <label class="form-check-label" for="thirdRadio">Masalah anak dalam pendidikan</label>
+                  <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="masalah-pendidikan" id="masalah_pendidikan" onclick="showLink('masalah_pendidikan')">
+                  <label class="form-check-label" id="masalah-pendidikan" for="thirdRadio">Masalah anak dalam pendidikan</label>
                 </li>
                 <li class="list-group-item">
-                  <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="thirdRadio">
-                  <label class="form-check-label" for="thirdRadio">Trafficking dan Exploitasi</label>
+                  <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="trafficking" id="trafficking" onclick="showLink('trafficking')">
+                  <label class="form-check-label" id="trafficking" for="thirdRadio">Trafficking dan Exploitasi</label>
                 </li>
                 <li class="list-group-item">
-                  <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="thirdRadio">
-                  <label class="form-check-label" for="thirdRadio">Anak berhadapan dengan hukum</label>
+                  <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="hukum" id="anak_hukum" onclick="showLink('anak_hukum')">
+                  <label class="form-check-label" id="anak-hukum" for="thirdRadio">Anak berhadapan dengan hukum</label>
                 </li>
               </ul>
-            </div>
+            </div>  
+
+
           </div> 
           <!-- End Card Body -->
-
-            <!-- Start Card Footer -->
-            <div class="card-footer"> 
-              <!-- <div style="padding-bottom: 56.25%; position:relative; display:block; width: 100%; height: 100%;">
-                <iframe class="embed-responsive-item" src="https://docs.google.com/forms/d/e/1FAIpQLSednbpxaOugrtewNg4duM5K3lr6vILV1uFOq57j7PA2tyGh_Q/viewform?embedded=true" width="100%" height="100%" style="position: absolute; top: 0;
-                left:0"></iframe>            
-              </div> -->
-            </div> 
-            <!-- End Card Footer -->
 
           </div>
           <!-- End Main Card Body -->
@@ -99,15 +93,35 @@
 
       </div>
       <!-- End Container -->
+
+      <script type="text/javascript">
+        function showLink(parameter_received){
+          // if(parameter_received == 'kekerasan-anak'){
+          //   var form_kekerasan = document.getElementById('form_kekerasan_anak');
+          // } else {
+          //   form_kekerasan.style.display = form_kekerasan.checked ? "block" : "none";
+          // }
+          console.log(parameter_received);
+        }
+      </script>
     
   <div class="container">
-    <div class="row text-center">
-      <div class="col-md-12">
-        <div style="padding-bottom: 100%; position:relative; display:block; width: 100%; height: 100%;"">
-          <iframe class="embed-responsive-item" src="https://docs.google.com/forms/d/e/1FAIpQLSednbpxaOugrtewNg4duM5K3lr6vILV1uFOq57j7PA2tyGh_Q/viewform?embedded=true" width="100%" height="100%" style="position: absolute; top: 0;
-          left:0"></iframe>
+    <div class="row">
+      <div class="col-lg-12">
+
+        <div class="card">
+          <div class="card-header">
+          </div>
+          <div class="card-body">
+          <div class="kekerasan-anak" id="form_kekerasan" style="padding-bottom: 100%; position:relative; display:block; width: 100%;">
+            <iframe  src="https://docs.google.com/forms/d/e/1FAIpQLSednbpxaOugrtewNg4duM5K3lr6vILV1uFOq57j7PA2tyGh_Q/viewform?embedded=true" width="100%" height="100%" style="position: absolute; top: 0;
+            left:0"></iframe>
+          </div>
+          <div class="bullying-anak">
+
+          </div>
+          </div>
         </div>
-        
       </div>
     </div>
   </div>
