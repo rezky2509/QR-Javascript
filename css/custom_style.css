@@ -11,3 +11,17 @@
     width: 10%;
     height: 100%;
 }
+
+[data-tab-content]{
+  display: none;
+}
+
+.active[data-tab-content]{
+  display: block;
+}
+
+
+
+/* [data-tab-content] {
+  display:none;
+} */
