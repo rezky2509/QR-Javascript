@@ -1,8 +1,9 @@
-MDB5
-Version: FREE 6.4.0
+This is a mini project
 
-Documentation:
-https://mdbootstrap.com/docs/standard/
+The import that include
+1. Bootstrap 5.0 
+2. MDBootstrap 
 
-Contact:
-office@mdbootstrap.com
+
+This project was built using solely using HTML and CSS only. No framework is being used in this project. 
+
