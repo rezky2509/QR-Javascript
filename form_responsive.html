@@ -1,2 +1,56 @@
 <!-- tabs responsive -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<style>
+    /* .container{
+        max-width: 450px;
+    }
+    .iframe{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+    } */
+/* 
+    [style*="--aspect-ratio"] > :first-child {
+    width: 100%;
+    }
+    [style*="--aspect-ratio"] > img {  
+    height: 100%;
+    } 
+    @supports (--custom:property) {
+    [style*="--aspect-ratio"] {
+        position: relative;
+    }
+    [style*="--aspect-ratio"]::before {
+        content: "";
+        display: block;
+        padding-bottom: calc(100% / (var(--aspect-ratio)));
+    }  
+    [style*="--aspect-ratio"] > :first-child {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+    }  
+    } */
+</style>
+<body>
+    <div class="container">
+        <div class="row embed-responsive-4by3">
+            <!-- <div class="col-sm-9" style="--aspect-ratio: 16/9;"> -->
+            <!-- <div class="col-sm-9 embed-responsive-4by3"> -->
+                <iframe  src="https://docs.google.com/forms/d/e/1FAIpQLSednbpxaOugrtewNg4duM5K3lr6vILV1uFOq57j7PA2tyGh_Q/viewform?embedded=true"frameBorder="0" width="250" height="900"></iframe>
+        </div>
+    </div>
+</body>
+</html>
