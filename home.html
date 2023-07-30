@@ -88,6 +88,14 @@
     .accordion {
       --bs-accordion-active-bg: rgb(141, 210, 189);
     }
+    /* centering the animation */
+    lottie-player {
+      /* the display set to block */
+      /* no margin is allow */
+      display: block;
+      margin : 0 auto;
+    }
+
 
   </style>
 </head>
@@ -96,87 +104,32 @@
 <nav class="navbar navbar-light">
   <span class="navbar-brand mb-0 h1" style="padding-left: 10%; text-decoration-color: antiquewhite;">Lindungi Anak</span>
   <!-- <span class="navbar-brand mb-0 h1">GIF HERE</span> -->
-  <img src="img/Report.gif" alt="report_animation" style="height: 50px;">
+  <!-- <img src="img/Report.gif" alt="report_animation" style="height: 50px;"> -->
 </nav>
 <!-- End Navbar -->
 
-<div class="container" style="padding-top: 5;"> 
-
-  <!-- Start row Text Center for Top  -->
+<!-- Start Container -->
+<div class="container" style="padding-top: 5px; padding-bottom: 10px;opacity: 0.75;"> 
   <div class="row text-center">
-    <div class="col-md-12" style="padding-bottom: 1%;">
-    </div>
-  </div>
-  <!-- End row text-center for top texting  -->
-
-    <div class="row p-3 mb-5 rounded">
-      <div class="col-12">
-
-        <div class="card text-center rounded scale-up-center">
-          <div class="card-header shadow rounded">
-            <!-- <h3>Anda korban kekersan di sekolah? Yuk Laporkan!.</h3> -->
-            <lottie-player src="https://lottie.host/c9f67a85-9508-494a-9379-33121b09ce90/BEi39eOb5k.json" background="rgba(var(--bs-body-color-rgb), 0.03)" speed="1" style="width: 100px; height: 100px; position:center;" direction="1" mode="normal" loop autoplay></lottie-player>
-            <div class="container-md-12 text-center">
-              <div class="row text-center embed-responsive-4by3">
-              </div>
-            </div>
-            <!-- <a href="https://iconscout.com/icons/report" target="_blank">
-              Free Report Icon</a> -->
-              <!-- <lottie-player src=“https://lottie.host/5c4580a2-54dd-44da-a329-d07f3ee0dfaa/cAvQfYThiQ.json” background=“#FFFFFF” speed=“1” style=“width: 300px; height: 300px” loop controls autoplay direction=“1” mode=“normal”></lottie-player>
-              <script src=“https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js”></script><lottie-player src=“https://lottie.host/5c4580a2-54dd-44da-a329-d07f3ee0dfaa/cAvQfYThiQ.json” background=“#FFFFFF” speed=“1” style= "width: 300px; height: 300px loop controls autoplay" direction=“1” mode=“normal”></lottie-player> -->
-            </div>
-
-          <!-- Start Card Body -->
-          <!-- <div class="card-body">
-            <h5 class="card-title text-center">Sila masukkan detil informasi dibawah</h5>
-            <p>Pilih dulu jenis kekerasan yang terjadi</p>
-            <div class="text-center">
-              <ul class="list-group text-center">
-                <li class="list-group-item">
-                  <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="aduan-kekerasan" id="kekerasan_anak" onclick="showLink('kekerasan_anak')">
-                  <label class="form-check-label" id="kekerasan-anak" for="firstRadio">Aduan kekerasan terhadap anak</label>
-                </li>
-                <li class="list-group-item">
-                  <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="bullying" id="bullying_anak" onclick="showLink('bullying_anak')">
-                  <label class="form-check-label" id="bullying-anak" for="secondRadio">Bullying terhadap anak</label>
-                </li>
-                <li class="list-group-item">
-                  <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="masalah-pendidikan" id="masalah_pendidikan" onclick="showLink('masalah_pendidikan')">
-                  <label class="form-check-label" id="masalah-pendidikan" for="thirdRadio">Masalah anak dalam pendidikan</label>
-                </li>
-                <li class="list-group-item">
-                  <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="trafficking" id="trafficking" onclick="showLink('trafficking')">
-                  <label class="form-check-label" id="trafficking" for="thirdRadio">Trafficking dan Exploitasi</label>
-                </li>
-                <li class="list-group-item">
-                  <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="hukum" id="anak_hukum" onclick="showLink('anak_hukum')">
-                  <label class="form-check-label" id="anak-hukum" for="thirdRadio">Anak berhadapan dengan hukum</label>
-                </li>
-              </ul>
-            </div>   -->
-
-
-          </div> 
-          <!-- End Card Body -->
-
+      <div class="col-lg-12 text-center">    
+        <div class="card">
+          <!--  rgba(var(--bs-body-color-rgb), 0.03)-->
+          <lottie-player src="https://lottie.host/c9f67a85-9508-494a-9379-33121b09ce90/BEi39eOb5k.json" background="rgba(255, 255, 255, 0.8)" speed="1" style="width: 100px; height: 100px; position:center;" direction="1" mode="normal" loop autoplay></lottie-player>  
+          <div class="card-body">
+            <h4 class="card-text">Ayo! laporkan kekerasan di sekolah yang terjadi pada kamu</h4>
           </div>
-          <!-- End Main Card Body -->
-
         </div>
-        <!-- End Div Col for main card Body -->
-
       </div>
-      <!-- End Card Body -->
-
-      </div>
-      <!-- End Container -->
+  </div>
+</div>
+<!-- End Container -->
 
 
   <div class="container">
     <div class="row">
       <div class="col-md-12"> 
 
-        <div class="card scale-up-center">
+        <div class="card scale-up-center" style="opacity: 0.75;">
           <div class="card-body">
       
             <div class="accordion accordion-flush" id="accordionFlushExample">
