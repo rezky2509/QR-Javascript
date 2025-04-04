@@ -4,6 +4,10 @@ The import that include
 1. Bootstrap 5.0 
 2. MDBootstrap 
 
+Feel free to play around using this link. 
+https://rezky2509.github.io/QR-Javascript/
 
-This project was built using solely using HTML and CSS only. No framework is being used in this project. 
+
+This project was built using solely using HTML, API QR Code generator and CSS Bootstrap Framework. 
+
 
